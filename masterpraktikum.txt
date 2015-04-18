@@ -1,0 +1,8 @@
+I have been working in a group of 3 students to build an oscilloscope on a FPGA ("ETI-Großprojekt"). We had to create a VGA-Signal to view the results on a standard screen. The project took two semesters.
+In the end we presented an oscilloscope that was able two view the graph of two analog signals (that were converted in an external device to digital signals). Furthermore we could perform arithmetic operations on the two signals and display the signals of the results.
+All the functionality was accessible using a graphical user interface that was rendered beside the graphs on the screen.
+
+The other software project I have been working on in a larger group was the lab-course "Hardware/Software Codesign", offered by the chair of robotics. We had to improve the hardware design of an already built lego car, and write the software to control the motion of the car. Since our lego car had severe problems in its design (wheels were very unstable as they could be controlled separately) we were happy with getting the car to drive forwards and curves without any wheel blocking. We achieved this by improvements on the software side.
+In this course I really enjoyed working in an international group of students. (5 students)
+
+Since I am attending the lecture Multiple-View Geometry alongside this lab-course, I would be interested in topics in the fields of 3D reconstruction, or also matching of images (finding points that correspond to each other in different images).
