@@ -22,17 +22,17 @@ class mnist_database:
     # return a tuple containing the array of training images
     # and the array of the corresponding labels
     def get_training_data( self ):
-        image_db = self.get_images( os.path.join(self.db_dir, training_images) )
-        label_db = self.get_labels( os.path.join(self.db_dir, training_labels) )
+        image_db = self._get_images( os.path.join(self.db_dir, training_images) )
+        label_db = self._get_labels( os.path.join(self.db_dir, training_labels) )
         return (image_db, label_db)
     
     def get_testing_data( self ):
-        image_db = self.get_images( os.path.join(self.db_dir, testing_images) )
-        label_db = self.get_labels( os.path.join(self.db_dir, testing_labels) )
+        image_db = self._get_images( os.path.join(self.db_dir, testing_images) )
+        label_db = self._get_labels( os.path.join(self.db_dir, testing_labels) )
         return (image_db, label_db)
     
     # extract the labels from the database file
-    def get_labels( self, db_path ):
+    def _get_labels( self, db_path ):
         db_file = open( db_path, 'rb' )
         
         # read the db-header
@@ -45,7 +45,7 @@ class mnist_database:
         return asarray(labels_raw, dtype=int8)
     
     # extract the images from the database file
-    def get_images( self, db_path ):
+    def _get_images( self, db_path ):
         db_file = open( db_path, 'rb' )
         
         # read the db-header
